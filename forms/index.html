@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+    input,select{
+        display: block;
+    }
+    input[type=checkbox]{
+        display: inline;
+    }
+    </style>
+</head>
+<body>
+
+   <button onclick="alert('you clicked me')">click me</button>
+
+    <form action="r.php" method="post">
+
+       <input type="text" name="username" value="Bob" placeholder="username or email">
+       <input type="number" name="age" placeholder="age">
+       <input type="email" name="email" required>
+       <input type="password" name="pass">
+       <input type="date" name="date">
+       <input type="range" max="50" min="20">
+       <input type="file">
+       interests:
+       <input type="checkbox" value="music">:Music
+       <input type="checkbox">:soccer
+       <input type="checkbox">:Movies
+       <input type="checkbox">:Golf
+       <br/>
+       Gender:<br/>
+       Male:  <input type="radio" name="gender" value="M">
+       Female:<input type="radio" name="gender">
+       Other:<input type="radio" name="gender">
+      <hr/>
+       <select>
+          <option value="">kampala</option>
+          <option value="">Jinja</option>
+          <option value="">Mbarara</option>
+          <option value="">Entebbe</option>
+       </select>
+
+       <textarea name="" id="" cols="30" rows="10">
+
+       </textarea>
+
+       <input type="submit" value="send">
+
+    </form>
+</body>
+</html>
